@@ -2,9 +2,6 @@ package com.mmall.vo;
 
 import java.math.BigDecimal;
 
-/**
- * Created by geely
- */
 public class ProductDetailVo {
 
     private Integer  id;
@@ -20,6 +17,13 @@ public class ProductDetailVo {
     private String createTime;
     private String updateTime;
 
+    private String approvalNo;
+    private String enterprise;
+
+
+
+    private String agency;
+    private String productStandard;
 
     private String imageHost;
     private Integer parentCategoryId;
@@ -134,5 +138,37 @@ public class ProductDetailVo {
 
     public void setParentCategoryId(Integer parentCategoryId) {
         this.parentCategoryId = parentCategoryId;
+    }
+
+    public String getApprovalNo() {
+        return approvalNo;
+    }
+
+    public void setApprovalNo(String approvalNo) {
+        this.approvalNo = approvalNo;
+    }
+
+    public String getEnterprise() {
+        return enterprise;
+    }
+
+    public void setEnterprise(String enterprise) {
+        this.enterprise = enterprise;
+    }
+
+    public String getAgency() {
+        return agency;
+    }
+
+    public void setAgency(String agency) {
+        this.agency = agency;
+    }
+
+    public String getProductStandard() {
+        return productStandard;
+    }
+
+    public void setProductStandard(String productStandard) {
+        this.productStandard = productStandard;
     }
 }

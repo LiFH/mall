@@ -28,7 +28,12 @@ public class Product {
 
     private Date updateTime;
 
-    public Product(Integer id, Integer categoryId, String name, String subtitle, String mainImage, String subImages, String detail, BigDecimal price, Integer stock, Integer status, Date createTime, Date updateTime) {
+    private String approvalNo;
+    private String enterprise;
+    private String agency;
+    private String productStandard;
+
+    public Product(Integer id, Integer categoryId, String name, String subtitle, String mainImage, String subImages, String detail, BigDecimal price, Integer stock, Integer status, Date createTime, Date updateTime,String approvalNo,String enterprise,String agency, String productStandard) {
         this.id = id;
         this.categoryId = categoryId;
         this.name = name;
@@ -41,6 +46,11 @@ public class Product {
         this.status = status;
         this.createTime = createTime;
         this.updateTime = updateTime;
+
+        this.approvalNo = approvalNo;
+        this.enterprise =enterprise;
+        this.agency = agency;
+        this.productStandard = productStandard;
     }
 
     public Product() {
@@ -141,5 +151,37 @@ public class Product {
 
     public void setUpdateTime(Date updateTime) {
         this.updateTime = updateTime;
+    }
+
+    public String getEnterprise() {
+        return enterprise;
+    }
+
+    public void setEnterprise(String enterprise) {
+        this.enterprise = enterprise;
+    }
+
+    public String getAgency() {
+        return agency;
+    }
+
+    public void setAgency(String agency) {
+        this.agency = agency;
+    }
+
+    public String getProductStandard() {
+        return productStandard;
+    }
+
+    public void setProductStandard(String productStandard) {
+        this.productStandard = productStandard;
+    }
+
+    public String getApprovalNo() {
+        return approvalNo;
+    }
+
+    public void setApprovalNo(String approvalNo) {
+        this.approvalNo = approvalNo;
     }
 }
