@@ -19,9 +19,6 @@ public class ProductDetailVo {
 
     private String approvalNo;
     private String enterprise;
-
-
-
     private String agency;
     private String productStandard;
 

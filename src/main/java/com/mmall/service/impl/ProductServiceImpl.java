@@ -109,7 +109,11 @@ public class ProductServiceImpl implements IProductService {
         productDetailVo.setStock(product.getStock());
 
         productDetailVo.setImageHost(PropertiesUtil.getProperty("ftp.server.http.prefix","http://img.lifh.xin/"));
-
+        productDetailVo.setAgency(product.getAgency());
+        productDetailVo.setApprovalNo(product.getApprovalNo());
+        productDetailVo.setEnterprise(product.getEnterprise());
+        productDetailVo.setApprovalNo(product.getApprovalNo());
+        productDetailVo.setProductStandard(product.getProductStandard());
         Category category = categoryMapper.selectByPrimaryKey(product.getCategoryId());
         if(category == null){
             productDetailVo.setParentCategoryId(0);//默认根节点
